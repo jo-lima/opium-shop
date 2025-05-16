@@ -1,0 +1,73 @@
+.threshold{
+    filter: brightness(calc(100% + var(--threshold))) grayscale(100%) contrast(1000%);
+}
+
+/* HEADER */
+.main-header{
+    /* DISPLAY */
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    /* ETC */
+    margin-bottom: 16px;
+}
+
+/* IMAGES */
+.header-image-container{
+    width: 48%;
+    position: relative;
+}
+
+.header-image{
+    width: 100%;
+    transition: 2s all ease;
+}
+.header-image:hover{
+    filter: none;
+}
+
+/* TITLES */
+.header-title{
+    /* TEXT */
+    color: #fff;
+    /* POSITIONING */
+    z-index: 999;
+    position: absolute;
+    /* ETC */
+    mix-blend-mode: difference;
+    transition: 2s all ease;
+}
+
+.header-title--1{
+    /* POSITIONING */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* TEXT */
+    font-size: 140px;
+    line-height: 0.8;
+}
+
+.header-title--1--big{
+    font-size: 180px;
+}
+
+.header-title--2{
+    /* POSITIONING */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* TEXT */
+    line-height: 0.4;
+    font-size: 180px;
+    text-align: center;
+}
+
+.header-title--2--small{
+    font-size: 80px;
+}
+
+.header-image-container:hover .header-title {
+    color: red;
+    /* mix-blend-mode: unset; */
+}

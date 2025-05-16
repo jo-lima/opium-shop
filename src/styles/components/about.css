@@ -1,0 +1,26 @@
+.about{
+    background-color: #fff;
+    color: #000;
+}
+
+.about__container{
+    display: flex;
+}
+
+.text-container{
+
+}
+.about__image-container{
+    
+}
+
+.about__heading{
+    font-size: 160px;
+    font-family: "gt-america";
+    text-transform: uppercase;
+    line-height: 0.7;
+}
+.about__heading--big{
+    font-family: "old-london";
+    line-height: 1;
+}
