@@ -1,0 +1,27 @@
+/* icones */
+/* https://icon-sets.iconify.design/cuida/ */
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.threshold {
+  filter: brightness(calc(100% + var(--threshold))) grayscale(100%) contrast(1000%);
+}
+
+.paper-overlay {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("../../images/paper-texture--small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  mix-blend-mode: difference;
+}

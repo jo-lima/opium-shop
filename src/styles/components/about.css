@@ -1,26 +1,92 @@
-.about{
-    background-color: #fff;
-    color: #000;
+/* CONTAINER */
+.about {
+  color: #000;
+  padding: 64px 0;
+  background-color: #fff;
 }
 
-.about__container{
-    display: flex;
+.about__container {
+  gap: 64px;
+  display: flex;
 }
 
-.text-container{
+.about__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+/* HEADING */
+.about__heading-container {
+  display: flex;
+  flex-direction: column;
 }
-.about__image-container{
-    
+.about__heading {
+  font-size: 142px;
+  font-weight: bold;
+  font-family: "gt-america";
+  text-transform: uppercase;
+  margin-bottom: -38px;
 }
 
-.about__heading{
-    font-size: 160px;
-    font-family: "gt-america";
-    text-transform: uppercase;
-    line-height: 0.7;
+.about__heading--big {
+  font-family: "old-london";
+  color: red;
+  font-size: 180px;
+  margin-bottom: -12px;
+  margin-left: 304px;
 }
-.about__heading--big{
-    font-family: "old-london";
-    line-height: 1;
+.about__heading:last-child {
+  margin-left: 64px;
+  margin-bottom: unset;
+}
+
+/* TEXT */
+.about__text {
+  font-size: 20px;
+  color: #2c2c2c;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: "gt-america";
+}
+
+/* MAIN IMAGE */
+.about__image-container {
+  position: relative;
+  width: 100%;
+}
+
+.about__image--main {
+  display: block;
+  transition: all 1.2s ease;
+  box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.about__image--main:hover {
+  filter: none;
+}
+
+/* FLOATING IMAGES */
+.about__image--floating {
+  position: absolute;
+  z-index: 999;
+  box-shadow: 0 1px 16px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.2s all ease;
+}
+
+.about__image--floating:hover {
+  transform: scale(1.03) translateY(-2%);
+  box-shadow: 0 5px 18px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about__image--floating--1 {
+  bottom: -16px;
+  left: -24px;
+  width: 244px;
+}
+.about__image--floating--2 {
+  top: -32px;
+  right: -24px;
+  z-index: 999;
+  width: 204px;
 }

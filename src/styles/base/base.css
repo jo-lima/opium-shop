@@ -1,26 +1,20 @@
-:root{
-    --threshold:50%;
-    }
+:root {
+  --threshold: 50%;
+}
 
-/* BASE */
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    /* TEXT */
-    color: #fff;
-    line-height: 1;
-    font-family: "old-london";
-    /* BG */
-    background-color: #000;
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+body {
+  /* TEXT */
+  color: #fff;
+  line-height: 1;
+  font-family: "old-london";
+  /* BG */
+  background-color: #000;
 }

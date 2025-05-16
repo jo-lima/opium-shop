@@ -1,30 +1,34 @@
-.nav__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-padding: 16px 0 ;
+/* CONTAINER */
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
 }
 
-.nav-logo{
-    font-size: 80px;
+/* LOGO */
+.nav__logo {
+  font-size: 92px;
 }
 
-.nav-links{
-    /* DISPLAY */
-    gap: 64px;
-    display: flex;
-    align-items: center;
-    /* ETC  */
-    list-style: none;
+/* LINKS */
+.nav__links {
+  gap: 96px;
+  display: flex;
+  align-items: center;
+  /*  */
+  list-style: none;
 }
 
-.nav-links a{
-    /* TEXT */
-    font-family: "gt-america";
-    text-transform: uppercase;
-    color: #fff;
-
+.nav__links a {
+  /*  */
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "gt-america";
 }
-.nav-menu{
 
+.nav__menu {
+  cursor: pointer;
 }
