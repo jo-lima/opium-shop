@@ -9,6 +9,7 @@
 /* LOGO */
 .nav__logo {
   font-size: 92px;
+  font-family: "old-london";
 }
 
 /* LINKS */
@@ -26,7 +27,6 @@
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "gt-america";
 }
 
 .nav__menu {

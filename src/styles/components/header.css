@@ -33,6 +33,8 @@
   /*  */
   mix-blend-mode: difference;
   transition: 2s all ease;
+  /*  */
+  font-family: "old-london";
 }
 
 .header__title--1 {

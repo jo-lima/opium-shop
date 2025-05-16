@@ -1,0 +1,159 @@
+.products {
+  padding: 64px 0;
+  position: relative;
+}
+.products__container {
+  /*  */
+}
+
+/* HEADING */
+.products__heading-container {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 52px;
+  line-height: 0.9;
+  margin-bottom: 24px;
+}
+
+.products__heading--small {
+  font-weight: 100;
+  font-size: 84px;
+}
+.products__heading--big {
+  /*  */
+}
+
+/* CATTEGORY */
+.products__product-cattegory {
+  text-align: center;
+  font-size: 76px;
+  margin-bottom: 48px;
+  font-family: "old-london";
+  text-transform: uppercase;
+}
+
+/* PRODUCT CONTAINER */
+.products__product-container {
+  display: flex;
+  justify-content: space-between;
+  /*  */
+  position: relative;
+}
+
+.products__image {
+  width: 50%;
+  filter: drop-shadow(5px 10px 30px rgba(255, 255, 255, 0.4));
+  -webkit-filter: drop-shadow(5px 10px 30px rgba(255, 255, 255, 0.4));
+}
+
+/* TEXT CONTAINER */
+.products__text-container {
+  text-align: right;
+}
+
+/* DATE AND BRAND */
+.products__brand {
+  font-size: 22px;
+  font-weight: 100;
+  margin-bottom: 24px;
+}
+
+.products__date {
+  font-weight: 300;
+}
+
+/* PRODUCT NAME */
+.products__name {
+  line-height: 0.9;
+  margin-bottom: 24px;
+}
+
+.product__name--small {
+  font-weight: 200;
+  font-size: 46px;
+}
+
+.product__name--big {
+  font-weight: bold;
+  font-size: 84px;
+}
+
+/* PRODUCT FEATURES */
+.products__features {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  /*  */
+  margin-bottom: 64px;
+}
+
+.products__features li {
+  direction: rtl;
+  /*  */
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* ADD TO CART */
+.products__add-to-cart {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  /*  */
+  padding: 12px 24px;
+  /*  */
+  border: 0;
+  align-self: flex-end;
+}
+
+/* SWITCH BUTTONS */
+.products__switch {
+  top: 50%;
+  position: absolute;
+  /*  */
+  transform: translateY(-50%);
+  /*  */
+  color: #fff;
+  border: none;
+  background: none;
+}
+
+.products__switch--left {
+  left: -140px;
+}
+
+.products__switch--right {
+  right: -140px;
+}
+
+/* BACKGROUND EFFECT */
+.products__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: -999;
+  transition: all 1.5s;
+}
+
+.products__background--animated {
+  animation: background-in-out 1.5s;
+}
+
+@keyframes background-in-out {
+  0% {
+    transform: perspective(1000px) rotateX(0) scale(1);
+  }
+  25% {
+    transform: perspective(1000px) rotateX(15deg) scale(0.9);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(-15deg) scale(0.8);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(0) scale(1);
+  }
+}

@@ -25,3 +25,14 @@
   opacity: 0.15;
   mix-blend-mode: difference;
 }
+
+button {
+  display: inline-block;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+.temp {
+  background-color: #fff;
+  height: 800px;
+}
